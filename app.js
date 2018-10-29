@@ -36,6 +36,7 @@ if (username === "type" & password === "pass"){
 
 var years = [2005, 2006, 2007, 1019];
 
+// deleting a item from the array of years
 app.delete('/years/:item', (req, res, next) => {
     const item = req.params.item
     const theYears = years.indexOf(item);
